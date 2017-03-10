@@ -111,6 +111,8 @@ class Vehicle {
 http://es6-features.org/
 
 --
+* Compatibilidade com Navegadores (Babel) 
+--
 # Node e NPM
 --
 ## node
@@ -120,12 +122,39 @@ http://es6-features.org/
 # npm
 ## Say hello to package.json
 --
+## main commands
+* npm install
+* npm run script
+```javascript
+{
+  "name": "react-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigomaia17/react-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigomaia17/react-workshop/issues"
+  },
+  "homepage": "https://github.com/rodrigomaia17/react-workshop#readme"
+}
+```
+--
+# Show me the code!
+* Configurar Ambiente
+* Criar uma aplicação que faz um request numa url e imprime o resultado (node)
+--
 
-### Npm scripts
-## Configurar Ambiente
+
 ### NVM:
 ## JS Modules (export) 
-## Compatibilidade com Navegadores (Babel) 
 ## Webpack 
 ### Converter JS antigo para ES6
 
