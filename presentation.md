@@ -13,9 +13,9 @@ output: index.html
 ```javascript
 var $profileForm = $('#profile-form');
 if(isValid) {
-  $profile-form.find('.name-field').removeClass(".error-msg").addClass(".valid").css("color", "green");
+  $profileForm.find('.name-field').removeClass(".error-msg").addClass(".valid").css("color", "green");
 } else {
- $profile-form.find('.name-field').addClass(".error-msg").removeClass(".valid").css("color", "red");
+ $profileForm.find('.name-field').addClass(".error-msg").removeClass(".valid").css("color", "red");
 }
 ```
 --
