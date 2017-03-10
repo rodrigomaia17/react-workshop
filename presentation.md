@@ -8,6 +8,8 @@ output: index.html
 ## Do JQuery Way Of Life até Modern libs  
 
 --
+![](https://cdn-images-1.medium.com/max/2000/1*VnQdlm34i-1GapsOyflwEA.png)
+--
 ```javascript
 var $profileForm = $('#profile-form');
 if(isValid) {
@@ -151,18 +153,29 @@ http://es6-features.org/
 * Configurar Ambiente
 * Criar uma aplicação que faz um request numa url e imprime o resultado (node)
 --
+--
+# JS Modules (export) 
+--
+# Webpack 
+webpack.config.js
+--
 
+```javascript
+module.exports = {
+  entry: [ './app.js'],
+  output: {
+    filename: './public/bundle.js'
+  },
+  module: {
+    loaders: [
+      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ }
+    ]
+  }
+}
 
-### NVM:
-## JS Modules (export) 
-## Webpack 
-### Converter JS antigo para ES6
-
--- 
-
-- Trazer um HTML pronto
-- Exercícios:
-  - Aplicacao com JS antigo e Lodash para converter para ES6 (nao precisa ser no Browser, node mesmo) 
+```
+# Show me the code in the browser!
+--
 
 ## React (Terça - 9:30 as 10:30)
 ### Definição e Motivação 
