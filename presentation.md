@@ -13,9 +13,15 @@ output: index.html
 ```javascript
 var $profileForm = $('#profile-form');
 if(isValid) {
-  $profileForm.find('.name-field').removeClass(".error-msg").addClass(".valid").css("color", "green");
+  $profileForm.find('.name-field')
+    .removeClass(".error-msg")
+    .addClass(".valid")
+    .css("color", "green");
 } else {
- $profileForm.find('.name-field').addClass(".error-msg").removeClass(".valid").css("color", "red");
+ $profileForm.find('.name-field')
+    .addClass(".error-msg")
+    .removeClass(".valid")
+    .css("color", "red");
 }
 ```
 --
@@ -36,19 +42,19 @@ if(isValid) {
 --
 ## Main Features
 * const and let
-```javascript`
+```javascript
 // creating a constant
-const MAX = 10;  
+const MAX = 10;
 // creating a variable
-let value = 5;  
+let value = 5;
 // you can't change the value of a constant
-MAX = 5;  
+MAX = 5;
 // this change is allowed for `let` variables
-value = 10;  
+value = 10;
 // creating a constant object
-const obj = {};  
+const obj = {};
 // You can only change object's attribute
-obj.a = 10;  
+obj.a = 10;
 // but you can't reassign new data here
 obj = 100;
 ```
@@ -174,9 +180,9 @@ module.exports = {
 }
 
 ```
+--
 # Show me the code in the browser!
 --
-
 ## React (Terça - 9:30 as 10:30)
 ### Definição e Motivação 
 ### VirtualDOM 
