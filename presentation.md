@@ -13,9 +13,15 @@ output: index.html
 ```javascript
 var $profileForm = $('#profile-form');
 if(isValid) {
-  $profile-form.find('.name-field').removeClass(".error-msg").addClass(".valid").css("color", "green");
+  $profileForm.find('.name-field')
+    .removeClass(".error-msg")
+    .addClass(".valid")
+    .css("color", "green");
 } else {
- $profile-form.find('.name-field').addClass(".error-msg").removeClass(".valid").css("color", "red");
+ $profileForm.find('.name-field')
+    .addClass(".error-msg")
+    .removeClass(".valid")
+    .css("color", "red");
 }
 ```
 --
@@ -36,19 +42,19 @@ if(isValid) {
 --
 ## Main Features
 * const and let
-```javascript`
+```javascript
 // creating a constant
-const MAX = 10;  
+const MAX = 10;
 // creating a variable
-let value = 5;  
+let value = 5;
 // you can't change the value of a constant
-MAX = 5;  
+MAX = 5;
 // this change is allowed for `let` variables
-value = 10;  
+value = 10;
 // creating a constant object
-const obj = {};  
+const obj = {};
 // You can only change object's attribute
-obj.a = 10;  
+obj.a = 10;
 // but you can't reassign new data here
 obj = 100;
 ```
@@ -174,38 +180,54 @@ module.exports = {
 }
 
 ```
+--
 # Show me the code in the browser!
 --
-
-## React (Terça - 9:30 as 10:30)
-### Definição e Motivação 
-### VirtualDOM 
-### JSX (sintaxe)
-### Styles
+# React (Terca)
+--
+# Not a framework
+--
+# Components
+--
+# VirtualDOM 
+--
+# JSX (sintaxe)
+--
+# Styles
 
 - Exercicios:
   - Criar um Stateless Component (ReactDOM)
 
-## React Components (Quarta - 9:30 as 11:30)
-### Props  
-### State
-### Component LifeCycle (componentDidMount, componentWillUpdate)
+--
+# React Components
+--
+# Props  
+--
+# State
+--
+# Component LifeCycle
+```javascript
+componentWillMount();
 
-- Exercícios:
-  - Transformar o stateless components para classes
-  - Usar Props
-  - Usar Estado
-  - Usar um metodo de lifecycle (componentDidMount)
+componentDidMount();
+```
+--
+* Exercícios:
+  * Transformar o stateless components para classes
+  * Usar Props
+  * Usar Estado
+  * Usar um metodo de lifecycle (componentDidMount)
 
-## Testing React components e Outros (Quinta - 9:30 as 10:30)
-### Enzyme
-#### Shallow vs Mount
-### Outros
-#### React-Router
-#### Redux
-
+--
+# Testing React components e Outros (Quinta)
+--
+# Enzyme
+--
+# Shallow vs Mount
+--
+# Outros
+* React-Router
+* Redux
+--
 - Exercícios:
   - Testar o component anterior
-
-## TODO Reservar a Luca Bastos
-## TODO Enviar Invites
