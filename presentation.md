@@ -183,35 +183,51 @@ module.exports = {
 --
 # Show me the code in the browser!
 --
-## React (Terça - 9:30 as 10:30)
-### Definição e Motivação 
-### VirtualDOM 
-### JSX (sintaxe)
-### Styles
+# React (Terca)
+--
+# Not a framework
+--
+# Components
+--
+# VirtualDOM 
+--
+# JSX (sintaxe)
+--
+# Styles
 
 - Exercicios:
   - Criar um Stateless Component (ReactDOM)
 
-## React Components (Quarta - 9:30 as 11:30)
-### Props  
-### State
-### Component LifeCycle (componentDidMount, componentWillUpdate)
+--
+# React Components
+--
+# Props  
+--
+# State
+--
+# Component LifeCycle
+```javascript
+componentWillMount();
 
-- Exercícios:
-  - Transformar o stateless components para classes
-  - Usar Props
-  - Usar Estado
-  - Usar um metodo de lifecycle (componentDidMount)
+componentDidMount();
+```
+--
+* Exercícios:
+  * Transformar o stateless components para classes
+  * Usar Props
+  * Usar Estado
+  * Usar um metodo de lifecycle (componentDidMount)
 
-## Testing React components e Outros (Quinta - 9:30 as 10:30)
-### Enzyme
-#### Shallow vs Mount
-### Outros
-#### React-Router
-#### Redux
-
+--
+# Testing React components e Outros (Quinta)
+--
+# Enzyme
+--
+# Shallow vs Mount
+--
+# Outros
+* React-Router
+* Redux
+--
 - Exercícios:
   - Testar o component anterior
-
-## TODO Reservar a Luca Bastos
-## TODO Enviar Invites
