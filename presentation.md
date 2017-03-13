@@ -1,4 +1,4 @@
-title: Nodejs com o Jigsaw
+title: React com o Jigsaw
 controls: true
 #theme: vtrbtf/cleaver-tw
 output: index.html
@@ -6,7 +6,22 @@ output: index.html
 
 -- 
 # Curtindo um React com seu amigo Jigsaw
+
 -- 
+## Roteiro:
+* Breve história (prometo) sobre como chegamos aqui
+* ES6
+* Node e NPM
+* Babel
+* Webpack
+* React (props e state)
+* Component LifeCyle 
+* Testing React Components (Enzyme)
+* Outros:
+  * Redux
+  * React-Router
+ 
+--
 # Saindo do Javascript Old Life 
 ## Do JQuery Way Of Life até as Modern libs
 
