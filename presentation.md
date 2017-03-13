@@ -1,14 +1,17 @@
-title: LambdaCD
+title: Nodejs com o Jigsaw
 controls: true
 #theme: vtrbtf/cleaver-tw
 output: index.html
 
+
+-- 
+# Curtindo um React com seu amigo Jigsaw
 -- 
 # Saindo do Javascript Old Life 
-## Do JQuery Way Of Life até Modern libs  
+## Do JQuery Way Of Life até as Modern libs
 
---
-![](https://cdn-images-1.medium.com/max/2000/1*VnQdlm34i-1GapsOyflwEA.png)
+-- 
+# [uma imagem massa que ficou muito grande pra ficar aqui](https://cdn-images-1.medium.com/max/2000/1*VnQdlm34i-1GapsOyflwEA.png)
 --
 ```javascript
 var $profileForm = $('#profile-form');
@@ -38,7 +41,7 @@ if(isValid) {
 # And then...
 
 --
-# ES6
+# ES6 rápido pra quem já programou JS
 --
 ## Main Features
 * const and let
@@ -113,13 +116,13 @@ class Vehicle {
 }
 ```
 -- 
-
 # And other stuff...
 
 http://es6-features.org/
 
 --
-* Compatibilidade com Navegadores (Babel) 
+# E como rodar isso tudo hoje?
+## Dê oi para o Babel (aka "I want it all, and I want it now") 
 --
 # Node e NPM
 --

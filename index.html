@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>LambdaCD</title>
+  <title>Nodejs com o Jigsaw</title>
   <style type="text/css">
     body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -365,24 +365,34 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </div>
 
   <div class="slide  " id="slide-1">
+    <section class="slide-content"><h1 id="curtindo-um-react-com-seu-amigo-jigsaw">Curtindo um React com seu amigo Jigsaw</h1>
+</section>
+  </div>
+  <div class="slide hidden  " id="slide-2">
     <section class="slide-content"><h1 id="saindo-do-javascript-old-life">Saindo do Javascript Old Life</h1>
-<h2 id="do-jquery-way-of-life-at-modern-libs">Do JQuery Way Of Life até Modern libs</h2>
+<h2 id="do-jquery-way-of-life-at-as-modern-libs">Do JQuery Way Of Life até as Modern libs</h2>
 </section>
   </div>
-  <div class="slide hidden" id="slide-2">
-    <section class="slide-content"><p><img src="https://cdn-images-1.medium.com/max/2000/1*VnQdlm34i-1GapsOyflwEA.png" alt=""></p>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-3">
-    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> $profileForm = $(<span class="hljs-string">'#profile-form'</span>);
-<span class="hljs-keyword">if</span>(isValid) {
-  $profile-form.find(<span class="hljs-string">'.name-field'</span>).removeClass(<span class="hljs-string">".error-msg"</span>).addClass(<span class="hljs-string">".valid"</span>).css(<span class="hljs-string">"color"</span>, <span class="hljs-string">"green"</span>);
-} <span class="hljs-keyword">else</span> {
- $profile-form.find(<span class="hljs-string">'.name-field'</span>).addClass(<span class="hljs-string">".error-msg"</span>).removeClass(<span class="hljs-string">".valid"</span>).css(<span class="hljs-string">"color"</span>, <span class="hljs-string">"red"</span>);
-}</code></pre>
+  <div class="slide hidden  " id="slide-3">
+    <section class="slide-content"><h1 id="-uma-imagem-massa-que-ficou-muito-grande-pra-ficar-aqui-https-cdn-images-1-medium-com-max-2000-1-vnqdlm34i-1gapsoyflwea-png-"><a href="https://cdn-images-1.medium.com/max/2000/1*VnQdlm34i-1GapsOyflwEA.png">uma imagem massa que ficou muito grande pra ficar aqui</a></h1>
 </section>
   </div>
   <div class="slide hidden" id="slide-4">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> $profileForm = $(<span class="hljs-string">'#profile-form'</span>);
+<span class="hljs-keyword">if</span>(isValid) {
+  $profileForm.find(<span class="hljs-string">'.name-field'</span>)
+    .removeClass(<span class="hljs-string">".error-msg"</span>)
+    .addClass(<span class="hljs-string">".valid"</span>)
+    .css(<span class="hljs-string">"color"</span>, <span class="hljs-string">"green"</span>);
+} <span class="hljs-keyword">else</span> {
+ $profileForm.find(<span class="hljs-string">'.name-field'</span>)
+    .addClass(<span class="hljs-string">".error-msg"</span>)
+    .removeClass(<span class="hljs-string">".valid"</span>)
+    .css(<span class="hljs-string">"color"</span>, <span class="hljs-string">"red"</span>);
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-5">
     <section class="slide-content"><h1 id="after-jquery-">After JQuery:</h1>
 <ul>
 <li>Angular</li>
@@ -392,36 +402,36 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-5">
+  <div class="slide hidden  " id="slide-6">
     <section class="slide-content"><h1 id="and-then-">And then...</h1>
 </section>
   </div>
-  <div class="slide hidden" id="slide-6">
-    <section class="slide-content"><h1 id="es6">ES6</h1>
+  <div class="slide hidden" id="slide-7">
+    <section class="slide-content"><h1 id="es6-r-pido-pra-quem-j-programou-js">ES6 rápido pra quem já programou JS</h1>
 </section>
   </div>
-  <div class="slide hidden" id="slide-7">
+  <div class="slide hidden" id="slide-8">
     <section class="slide-content"><h2 id="main-features">Main Features</h2>
 <ul>
-<li>const and let<pre><code class="lang-javascript`">// creating a constant
-const MAX = 10;  
-// creating a variable
-let value = 5;  
-// you can&#39;t change the value of a constant
-MAX = 5;  
-// this change is allowed for `let` variables
-value = 10;  
-// creating a constant object
-const obj = {};  
-// You can only change object&#39;s attribute
-obj.a = 10;  
-// but you can&#39;t reassign new data here
-obj = 100;</code></pre>
+<li>const and let<pre><code class="lang-javascript"><span class="hljs-comment">// creating a constant</span>
+<span class="hljs-keyword">const</span> MAX = <span class="hljs-number">10</span>;
+<span class="hljs-comment">// creating a variable</span>
+<span class="hljs-keyword">let</span> value = <span class="hljs-number">5</span>;
+<span class="hljs-comment">// you can't change the value of a constant</span>
+MAX = <span class="hljs-number">5</span>;
+<span class="hljs-comment">// this change is allowed for `let` variables</span>
+value = <span class="hljs-number">10</span>;
+<span class="hljs-comment">// creating a constant object</span>
+<span class="hljs-keyword">const</span> obj = {};
+<span class="hljs-comment">// You can only change object's attribute</span>
+obj.a = <span class="hljs-number">10</span>;
+<span class="hljs-comment">// but you can't reassign new data here</span>
+obj = <span class="hljs-number">100</span>;</code></pre>
 </li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-8">
+  <div class="slide hidden  " id="slide-9">
     <section class="slide-content"><ul>
 <li>Template strings<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> name = <span class="hljs-string">"John Connor"</span>;  
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`This is <span class="hljs-subst">${name}</span> from the future!`</span>);</code></pre>
@@ -429,7 +439,7 @@ obj = 100;</code></pre>
 </ul>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-9">
+  <div class="slide hidden  " id="slide-10">
     <section class="slide-content"><ul>
 <li>Arrow Functions<pre><code class="lang-javascript"><span class="hljs-comment">// empty arrow-function</span>
 <span class="hljs-keyword">const</span> foo() =&gt; {};  
@@ -458,7 +468,7 @@ obj = 100;</code></pre>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-10">
+  <div class="slide hidden" id="slide-11">
     <section class="slide-content"><ul>
 <li>Spread Operators<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">a, b</span>) =&gt; </span>{  
   <span class="hljs-keyword">return</span> a + b
@@ -469,7 +479,7 @@ add(...values); <span class="hljs-comment">// returns 3</span></code></pre>
 </ul>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-11">
+  <div class="slide hidden  " id="slide-12">
     <section class="slide-content"><ul>
 <li>Classes<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vehicle</span> </span>{  
   <span class="hljs-keyword">constructor</span>(name) {
@@ -483,33 +493,32 @@ add(...values); <span class="hljs-comment">// returns 3</span></code></pre>
 </ul>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-12">
+  <div class="slide hidden  " id="slide-13">
     <section class="slide-content"><h1 id="and-other-stuff-">And other stuff...</h1>
 <p><a href="http://es6-features.org/">http://es6-features.org/</a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-13">
-    <section class="slide-content"><ul>
-<li>Compatibilidade com Navegadores (Babel)</li>
-</ul>
-</section>
-  </div>
   <div class="slide hidden" id="slide-14">
-    <section class="slide-content"><h1 id="node-e-npm">Node e NPM</h1>
+    <section class="slide-content"><h1 id="e-como-rodar-isso-tudo-hoje-">E como rodar isso tudo hoje?</h1>
+<h2 id="d-oi-para-o-babel-aka-i-want-it-all-and-i-want-it-now-">Dê oi para o Babel (aka &quot;I want it all, and I want it now&quot;)</h2>
 </section>
   </div>
   <div class="slide hidden" id="slide-15">
+    <section class="slide-content"><h1 id="node-e-npm">Node e NPM</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-16">
     <section class="slide-content"><h2 id="node">node</h2>
 <h3 id="an-event-driven-javascript-runtime">An event driven javascript runtime</h3>
 <p><img src="http://www.baloo.io/images/Node-EventDriven.jpg" alt="node"></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-16">
+  <div class="slide hidden" id="slide-17">
     <section class="slide-content"><h1 id="npm">npm</h1>
 <h2 id="say-hello-to-package-json">Say hello to package.json</h2>
 </section>
   </div>
-  <div class="slide hidden" id="slide-17">
+  <div class="slide hidden" id="slide-18">
     <section class="slide-content"><h2 id="main-commands">main commands</h2>
 <ul>
 <li>npm install</li>
@@ -536,7 +545,7 @@ add(...values); <span class="hljs-comment">// returns 3</span></code></pre>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-18">
+  <div class="slide hidden" id="slide-19">
     <section class="slide-content"><h1 id="show-me-the-code-">Show me the code!</h1>
 <ul>
 <li>Configurar Ambiente</li>
@@ -544,51 +553,87 @@ add(...values); <span class="hljs-comment">// returns 3</span></code></pre>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-19">
+  <div class="slide hidden" id="slide-20">
     <section class="slide-content"></section>
   </div>
-  <div class="slide hidden" id="slide-20">
+  <div class="slide hidden" id="slide-21">
     <section class="slide-content"><h1 id="js-modules-export-">JS Modules (export)</h1>
 </section>
   </div>
-  <div class="slide hidden" id="slide-21">
+  <div class="slide hidden" id="slide-22">
     <section class="slide-content"><h1 id="webpack">Webpack</h1>
 <p>webpack.config.js</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-22">
+  <div class="slide hidden" id="slide-23">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-built_in">module</span>.exports = {
-  entry: [ <span class="hljs-string">'.app.js'</span>],
+  entry: [ <span class="hljs-string">'./app.js'</span>],
   output: {
     filename: <span class="hljs-string">'./public/bundle.js'</span>
   },
   <span class="hljs-built_in">module</span>: {
     loaders: [
-      { test: <span class="hljs-regexp">/\.js$/</span>, loader: <span class="hljs-string">'babel-loader'</span>, exclude: <span class="hljs-regexp">/node_modules/</span> },
-      { test: <span class="hljs-regexp">/\.jsx$/</span>, loader: <span class="hljs-string">'babel-loader'</span>, exclude: <span class="hljs-regexp">/node_modules/</span> }
+      { test: <span class="hljs-regexp">/\.js$/</span>, loader: <span class="hljs-string">'babel-loader'</span>, exclude: <span class="hljs-regexp">/node_modules/</span> }
     ]
   }
 }</code></pre>
-<h1 id="show-me-the-code-in-the-browser-">Show me the code in the browser!</h1>
 </section>
   </div>
-  <div class="slide hidden" id="slide-23">
-    <section class="slide-content"><h2 id="react-ter-a-9-30-as-10-30-">React (Terça - 9:30 as 10:30)</h2>
-<h3 id="defini-o-e-motiva-o">Definição e Motivação</h3>
-<h3 id="virtualdom">VirtualDOM</h3>
-<h3 id="jsx-sintaxe-">JSX (sintaxe)</h3>
-<h3 id="styles">Styles</h3>
+  <div class="slide hidden" id="slide-24">
+    <section class="slide-content"><h1 id="show-me-the-code-in-the-browser-">Show me the code in the browser!</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-25">
+    <section class="slide-content"><h1 id="react-terca-">React (Terca)</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-26">
+    <section class="slide-content"><h1 id="not-a-framework">Not a framework</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-27">
+    <section class="slide-content"><h1 id="components">Components</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-28">
+    <section class="slide-content"><h1 id="virtualdom">VirtualDOM</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-29">
+    <section class="slide-content"><h1 id="jsx-sintaxe-">JSX (sintaxe)</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-30">
+    <section class="slide-content"><h1 id="styles">Styles</h1>
 <ul>
 <li>Exercicios:<ul>
 <li>Criar um Stateless Component (ReactDOM)</li>
 </ul>
 </li>
 </ul>
-<h2 id="react-components-quarta-9-30-as-11-30-">React Components (Quarta - 9:30 as 11:30)</h2>
-<h3 id="props">Props</h3>
-<h3 id="state">State</h3>
-<h3 id="component-lifecycle-componentdidmount-componentwillupdate-">Component LifeCycle (componentDidMount, componentWillUpdate)</h3>
-<ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-31">
+    <section class="slide-content"><h1 id="react-components">React Components</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-32">
+    <section class="slide-content"><h1 id="props">Props</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-33">
+    <section class="slide-content"><h1 id="state">State</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-34">
+    <section class="slide-content"><h1 id="component-lifecycle">Component LifeCycle</h1>
+<pre><code class="lang-javascript">componentWillMount();
+
+componentDidMount();</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-35">
+    <section class="slide-content"><ul>
 <li>Exercícios:<ul>
 <li>Transformar o stateless components para classes</li>
 <li>Usar Props</li>
@@ -597,20 +642,35 @@ add(...values); <span class="hljs-comment">// returns 3</span></code></pre>
 </ul>
 </li>
 </ul>
-<h2 id="testing-react-components-e-outros-quinta-9-30-as-10-30-">Testing React components e Outros (Quinta - 9:30 as 10:30)</h2>
-<h3 id="enzyme">Enzyme</h3>
-<h4 id="shallow-vs-mount">Shallow vs Mount</h4>
-<h3 id="outros">Outros</h3>
-<h4 id="react-router">React-Router</h4>
-<h4 id="redux">Redux</h4>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-36">
+    <section class="slide-content"><h1 id="testing-react-components-e-outros-quinta-">Testing React components e Outros (Quinta)</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-37">
+    <section class="slide-content"><h1 id="enzyme">Enzyme</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-38">
+    <section class="slide-content"><h1 id="shallow-vs-mount">Shallow vs Mount</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-39">
+    <section class="slide-content"><h1 id="outros">Outros</h1>
 <ul>
+<li>React-Router</li>
+<li>Redux</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-40">
+    <section class="slide-content"><ul>
 <li>Exercícios:<ul>
 <li>Testar o component anterior</li>
 </ul>
 </li>
 </ul>
-<h2 id="todo-reservar-a-luca-bastos">TODO Reservar a Luca Bastos</h2>
-<h2 id="todo-enviar-invites">TODO Enviar Invites</h2>
 </section>
   </div>
 
