@@ -11,7 +11,7 @@ class ProfilePage extends React.Component {
   }
 
   componentWillMount() {
-    axios.get('https://jigsaw.thoughtworks.net/api/people/greis', {
+    axios.get('https://staging.jigsaw.thoughtworks.net/api/people/greis', {
       headers: {'Authorization': ''}
     }).then(response => {
       this.setState({
