@@ -1,10 +1,54 @@
 import axios from 'axios';
+import ReactDOM from 'react-dom';
+import React from 'react';
 
+class ProfilePage extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      consultant: '',
+    }
+  }
 
-axios.get('https://jigsaw.thoughtworks.net/api/people/rmaia', {
-      headers: {'Authorization': 'foobar'}  
-    }).then(function (response) {
-      console.log(response.data);
+  componentWillMount() {
+    axios.get('https://jigsaw.thoughtworks.net/api/people/greis', {
+      headers: {'Authorization': ''}
+    }).then(response => {
+      this.setState({
+        consultant: response.data,
+      });
     });
+  }
 
-console.log('oi');
+  render() {
+    if (this.state.consultant) {
+      return <Consultant consultant={this.state.consultant} />;
+    }
+    return <div>loading</div>;
+  }
+}
+
+class Consultant extends React.Component {
+  render() {
+    return (
+      <div>
+        {this.props.consultant.preferredName}
+        <ConsultantDetails
+          grade={this.props.consultant.grade.name}
+          role={this.props.consultant.role.name}
+        />
+      </div>
+    );
+  }
+}
+
+class ConsultantDetails extends React.Component {
+  render() {
+    return <div>{this.props.grade} {this.props.role}</div>;
+  }
+}
+
+ReactDOM.render(
+  <ProfilePage />,
+  document.getElementById('consultant-container')
+);
